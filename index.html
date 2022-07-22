@@ -14,7 +14,14 @@
     <!-- Custom CSS-->
     <link href="css/universal.css" rel="stylesheet">
   </head>
-  <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top" class="top">
+     <!-- script contact-->
+     <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top" class="top">
+    <script>
+      function decryptEmail(encoded) {
+        var address = atob(encoded);
+        window.location.href = "mailto:" + address;
+      }
+      </script>
     <!-- Navigation-->
     <nav class="navbar navbar-universal navbar-custom navbar-fixed-top">
       <div class="container">
@@ -26,7 +33,7 @@
             <li class="hidden"><a href="#page-top"></a></li>
             <li><a href="#page-top">Home <span class="caret"></span></a>
             </li>
-            <li><a href="contact.html">Contact<span class="caret"></span></a>
+            <li><a href="javascript:decryptEmail('amVhbmxvdXBAcmljaGV0Lml0');">Contact<span class="caret"></span></a>
             </li>
       </div>
     </nav>
